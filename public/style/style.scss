@@ -1,0 +1,53 @@
+@import "./navegation";
+@import "./firstcat";
+
+html {
+  background: #ffff;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sectionheader {
+  font-size: 1.25em;
+}
+a {
+  color: #fff;
+}
+.copy span {
+  text-align: right;
+}
+.sectionheader ~ * {
+  width: 50%;
+}
+.text {
+  float: right;
+  width: 30%;
+  margin: 0 15% 0 0;
+}
+
+#footer {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.navigationlist {
+  text-align: center;
+}
+
+#bottomalign {
+  bottom: 0;
+}
+div > #image {
+  margin: 0 0 0 calc(50% - 200px);
+}
+
+.li:hover {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+}

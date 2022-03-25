@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>aMaZing SiTe!</title>
+   
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="./index.js" type="text/javascript"></script>
+    <script href="./common.js" type="text/javascript"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+
+	
+  </head>
+
+  <body>
+
+
+  	<div id="page" >
+		
+		<!--
+		<div id="list-of-challenges"></div>
+		-->
+		<div class="navbar">
+		<nav class="dropdown navigationlist">
+			<button onclick="myFunction()" class="dropbtn">Menu</button>
+			<dl id="myDropdown" class="dropdown-content">
+				<li class="li"><a href="#One">Item 1</a></li>
+				<li class="li"><a  href="#Two">Item 2</a></li>
+				<li class="li"><a  id="alert">Item 3</a></li>
+			</dl>
+		</div>
+			
+		</nav>
+
+		<section class="section">
+  			<h1 class="h1">Best Site Ever</h1>
+  			<div class="catOneText" id="One">
+  				<p>  					  					
+  					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  				</p>
+  			</div>
+  			<div>
+  				<img src="http://placekitten.com/400/400" id="image"/>
+			</div>
+		</section>
+
+		<hr/>
+  				<section class="section" id="Two">
+  					<h1 class="sectionheader">More Cats!</h1>
+  					
+  						<img src="http://placekitten.com/300/200" id="image"/>
+  						<div class="copy">
+  							<span>Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+  							</span>
+						</div>  				
+					
+  				</section>
+  			
+  	</div>
+  	
+
+
+  	<div id="chart">
+
+  	</div>
+
+  	<foot id="footer" style="background: rgba(0,0,0,0.5); padding: 20px; width: 100vw; display: block; color: #fff;">
+  		<span id="bottomalign" style="margin-bottom:10px;">&copy; Best Site Ever</span>
+  	</foot>
+
+  	<script>
+    	function align(){
+    		var f = document.getElementById('bottomalign');
+    		document.getElementById('bottomalign').style.position = "absolute";
+    	}
+    	align();
+    </script>
+
+  	<script type="text/javascript">
+  		align();
+  	</script>
+
+
+	<script>
+
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+	
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+
+
+		$(document).ready(function(){
+			$("#alert").click(function(){
+				alert("You have seen enought cats!");
+			});
+			});
+		</script>
+
+    
+
+  </body>
+</html>

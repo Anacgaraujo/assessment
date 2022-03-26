@@ -1,5 +1,6 @@
 dl {
   background: black;
+  width: 100%;
 }
 
 dl li {
@@ -7,15 +8,14 @@ dl li {
 }
 
 .li {
-  margin: 1em;
-  padding: 1em;
+  margin: 0.5em;
 }
 
 li a:hover {
   color: black;
 }
 
-.navbar {
+.navcontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,14 +23,9 @@ li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: black;
-}
-
-.navigationlist {
-  position: -webkit-sticky;
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  margin-top: -10px;
 }
 
 .dropbtn {
@@ -56,17 +51,18 @@ li a:hover {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 120px;
   overflow: auto;
   border-radius: 15px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: -10px;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px;
   text-decoration: none;
   display: block;
 }
@@ -100,21 +96,8 @@ li a:hover {
   width: 60vw;
 }
 
-html {
-  background: #ffff;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
 .sectionheader {
   font-size: 1.25em;
-}
-
-a {
-  color: #fff;
 }
 
 .copy span {
@@ -125,34 +108,51 @@ a {
   width: 50%;
 }
 
-.text {
-  float: right;
-  width: 30%;
-  margin: 0 15% 0 0;
-}
-
 #footer {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.navigationlist {
-  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100vw;
+  color: #fff;
+  display: block;
 }
 
 #bottomalign {
   bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bodycontainer {
+  margin: 10vh;
+  background: #ffff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+a {
+  color: #fff;
 }
 
 div > #image {
   margin: 0 0 0 calc(50% - 200px);
 }
 
-.li:hover {
-  font-weight: bold;
-}
-
 body {
   font-family: "Nunito", sans-serif;
   position: relative;
+}
+
+.catsImagDiv img {
+  width: 40vw;
 }
 /*# sourceMappingURL=style.css.map */

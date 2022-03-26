@@ -19,26 +19,27 @@
   <body>
 
 
-  	<div id="page" >
 		
 		<!--
 		<div id="list-of-challenges"></div>
 		-->
-		<div class="navbar">
-		<nav class="dropdown navigationlist">
-			<button onclick="myFunction()" class="dropbtn">Menu</button>
+		<div class="navcontainer">
+		<nav class="dropdown ">
+			<button onclick="myFunction()" class="dropbtn">Home</button>
 			<dl id="myDropdown" class="dropdown-content">
 				<li class="li"><a href="#One">Item 1</a></li>
 				<li class="li"><a  href="#Two">Item 2</a></li>
-				<li class="li"><a  id="alert">Item 3</a></li>
+				<li class="li"><a  href="pagethree.html">Infite Generator</a></li>
 			</dl>
-		</div>
-			
 		</nav>
+		</div>
 
-		<section class="section">
+		<div class="bodycontainer">
+		
+
+		<section class="section" id="One">
   			<h1 class="h1">Best Site Ever</h1>
-  			<div class="catOneText" id="One">
+  			<div class="catOneText" >
   				<p>  					  					
   					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   				</p>
@@ -49,69 +50,36 @@
 		</section>
 
 		<hr/>
+
   				<section class="section" id="Two">
   					<h1 class="sectionheader">More Cats!</h1>
-  					
   						<img src="http://placekitten.com/300/200" id="image"/>
   						<div class="copy">
   							<span>Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
   							</span>
 						</div>  				
-					
   				</section>
   			
   	</div>
   	
-
+	</div><!--  Body Container -->
 
   	<div id="chart">
 
   	</div>
 
-  	<foot id="footer" style="background: rgba(0,0,0,0.5); padding: 20px; width: 100vw; display: block; color: #fff;">
-  		<span id="bottomalign" style="margin-bottom:10px;">&copy; Best Site Ever</span>
+  	<foot id="footer">
+  		<span id="bottomalign" >&copy; Best Site Ever</span>
   	</foot>
 
-  	<script>
-    	function align(){
-    		var f = document.getElementById('bottomalign');
-    		document.getElementById('bottomalign').style.position = "absolute";
-    	}
-    	align();
-    </script>
+  	
 
   	<script type="text/javascript">
   		align();
   	</script>
 
 
-	<script>
-
-		function myFunction() {
-		  document.getElementById("myDropdown").classList.toggle("show");
-		}
-		
-	
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-			  var openDropdown = dropdowns[i];
-			  if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-			  }
-			}
-		  }
-		}
-
-
-		$(document).ready(function(){
-			$("#alert").click(function(){
-				alert("You have seen enought cats!");
-			});
-			});
-		</script>
+<script src="./common.js" type="text/javascript"></script>
 
     
 

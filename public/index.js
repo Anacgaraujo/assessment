@@ -8,7 +8,7 @@ $(document).ready(() => {
     var count = 0;
 
     var countDisplaySelector = document.getElementById('count');
-console.log(countDisplaySelector)
+// console.log(countDisplaySelector)
 
 countDisplaySelector.innerHTML = `Loading ammount of InnerBodyHTML Tags`
 
@@ -25,7 +25,7 @@ handleFetchData("../test_feed.json").then((data) => {
     const filtered = content.filter((item) => {
         return item.content.bodyHtml
     });
-    console.log(filtered)
+    // console.log(filtered)
     var words = [];
     const tweets = filtered.map((tweet) => {
         return tweet
@@ -64,9 +64,9 @@ handleFetchData("../test_feed.json").then((data) => {
 
         // console.log(count)
     })
-    console.log(words)
+    // console.log(words)
     const parsedWords = Object.values(words)
-    console.log(parsedWords);
+    // console.log(parsedWords);
 
     count = filtered.length
 

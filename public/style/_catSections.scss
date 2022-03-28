@@ -5,10 +5,17 @@
   flex-direction: column;
 }
 
-// h1.h1 {
-//     text-align: center;
-// }
-
 .catOneText {
   width: 60vw;
+}
+
+.sectionheader {
+  font-size: 1.25em;
+}
+
+.copy span {
+  text-align: right;
+}
+.sectionheader ~ * {
+  width: 50%;
 }
